@@ -49,7 +49,8 @@ exit - leave edit mode
 
             elif lnn == 'tl':
                 print('You can fill in the file like this: [your_text] [your_link]')
-                text, link = map(input(">>>").split())
+                text = input("Your text >>>")
+                link = input("Your link >>>")
                 fhl.link_write(text, link)
                 print("successfully\n")
 
